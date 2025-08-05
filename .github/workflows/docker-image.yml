@@ -60,6 +60,12 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: set lower case owner name
+        run: |
+            echo "OWNER_LC=${OWNER,,}" >>${GITHUB_ENV}
+        env:
+            OWNER: '${{ github.repository_owner }}'
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
@@ -67,5 +73,5 @@ jobs:
           file: ./Dockerfile
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/${{ OWNER_LC }}:latest
+            ghcr.io/${{ OWNER_LC }}:${{ github.sha }}
