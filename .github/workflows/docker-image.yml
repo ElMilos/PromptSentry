@@ -7,9 +7,6 @@ on:
   pull_request:
     branches:
       - main
-  public:
-    types: [published]
-
 
 permissions:
   contents: read
