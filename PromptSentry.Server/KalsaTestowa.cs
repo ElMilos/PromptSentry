@@ -4,7 +4,7 @@
     {
         int x = 0;
 
-        KalsaTestowa()
+     internal KalsaTestowa()
         {
             x = 1;
         }
