@@ -7,8 +7,6 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "promptsentry.client", "prom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptSentry.Server", "PromptSentry.Server\PromptSentry.Server.csproj", "{D1172893-D34F-4FFC-B5F4-355A4C8CD8E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
