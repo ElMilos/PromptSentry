@@ -30,6 +30,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Ensure obj/Debug directory exists
+        run: mkdir -p promptsentry.client/obj/Debug
+
       - name: Install client dependencies
         working-directory: promptsentry.client
         run: npm ci
